@@ -1,0 +1,96 @@
+ body{
+  background-repeat:no-repeat;
+  background-size:100%;
+    margin: 0;
+    padding: 0;
+    background: darkgray;
+    background-size: cover;
+    font-family: sans-serif;
+  /*login details code now*/
+ }
+  .loginbox{
+      width: 320px;
+      height: 420px;
+      background: #000;
+      color: #fff;
+      left: 50%;
+      top:50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      box-shadow: 10px 20px 10px 10px rgba(0, 0, 0, 0.712);
+    }
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin-top: 05px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: red;
+}
+.loginbox p{
+    margin-left: 8px;
+    margin-top: 70px;
+    padding: 0;
+    font-weight: bold;
+    position: relative;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom:20px;
+
+}
+#mobilenumber{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    padding: -15px;
+    color: white;
+    margin-right: 50px;
+    width: 227px;
+    margin-left: 14%;
+    margin-top: 8px;
+    position: relative;
+}
+#password{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    padding: -15px;
+    color: white;
+    margin-right: 50px;
+    width: 227px;
+    margin-left: 14%;
+    margin-top: 25px;
+    position: relative;
+}
+#submitbutton{
+    margin-top: 36px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 260px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 32px;
+    position: relative;
+}
+#submitbutton:hover{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}   

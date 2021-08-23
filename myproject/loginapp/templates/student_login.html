@@ -1,0 +1,18 @@
+{% extends "design1.html" %}
+{% block title %}Login - Student{% endblock %}
+{% block css %}{%load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/studentstyle.css' %}">
+{% endblock %}
+{% block content %}
+<div class="loginbox">
+ 
+  {% load static %}<img src="{% static 'avatar.jfif' %}" class="avatar">
+  <p id="title" align="center" style="font-family: sans-serif; font-size:30px;" >Login</p>
+  <form action="dashboard" method="POST">{% csrf_token %}
+    <input type="tel" placeholder="Phone Number" name="mobilenumber" id="mobilenumber" required>
+    <button id="submitbutton">Submit</button>
+  </form>
+  </hr>
+</div>
+</div>
+{% endblock %}

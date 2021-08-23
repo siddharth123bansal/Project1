@@ -1,0 +1,30 @@
+{% extends "design2.html" %}
+{% block title %}My Profile{% endblock %}
+{% block content %}
+<h1>This is my profile page</h1>
+<div class="rows">
+    <div class="col">
+      <h3>Previous Entries</h3>
+   <table>
+     <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>semester</th>
+      <th>branch</th>
+      <th>year</th>
+      </thead>
+      <tbody>
+      {% for i in messages %}
+      <tr>
+      <td>{{i.student_id}}</td>
+      <td>{{i.studentname}}</td>
+      <td>{{i.semester}}</td>
+      <td>{{i.branch}}</td>
+      <td>{{i.year}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+   </table> 
+    </div>
+  </div>
+{% endblock %}

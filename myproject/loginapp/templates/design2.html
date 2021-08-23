@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}Page Title{% endblock %}
+    </title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/mainstyle.css' %}">
+    {% block css %}{% endblock %}
+    <link rel="shortcut icon" href="{% static 'favicon.png' %}" type="image/x-icon">
+</head>
+<div class="topnav">
+    <ul style="list-style-type:none;" >
+        <li><a href="index">Log Out</a></li>
+        <li><a href="myprofile">My Profile</a></li>
+    </ul>
+    {% load static %}<img src="{% static '/Techno-Logo.png' %}" id="logo" alt="home" />
+    
+</div>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
